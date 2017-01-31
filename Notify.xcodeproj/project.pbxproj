@@ -13,6 +13,7 @@
 		D5F32EBB1E41289F004F0884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5F32EBA1E41289F004F0884 /* Assets.xcassets */; };
 		D5F32EBE1E41289F004F0884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5F32EBC1E41289F004F0884 /* LaunchScreen.storyboard */; };
 		D5F32EC91E41289F004F0884 /* NotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F32EC81E41289F004F0884 /* NotifyTests.swift */; };
+		D5F32ED81E413F4C004F0884 /* MarkRap.gif in Resources */ = {isa = PBXBuildFile; fileRef = D5F32ED71E413F4C004F0884 /* MarkRap.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		D5F32EC41E41289F004F0884 /* NotifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F32EC81E41289F004F0884 /* NotifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyTests.swift; sourceTree = "<group>"; };
 		D5F32ECA1E41289F004F0884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5F32ED71E413F4C004F0884 /* MarkRap.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MarkRap.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				D5F32EBA1E41289F004F0884 /* Assets.xcassets */,
 				D5F32EB31E41289F004F0884 /* AppDelegate.swift */,
 				D5F32EBF1E41289F004F0884 /* Info.plist */,
+				D5F32ED71E413F4C004F0884 /* MarkRap.gif */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5F32EBE1E41289F004F0884 /* LaunchScreen.storyboard in Resources */,
+				D5F32ED81E413F4C004F0884 /* MarkRap.gif in Resources */,
 				D5F32EBB1E41289F004F0884 /* Assets.xcassets in Resources */,
 				D5F32EB91E41289F004F0884 /* Main.storyboard in Resources */,
 			);
