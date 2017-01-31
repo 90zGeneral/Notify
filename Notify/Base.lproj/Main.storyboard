@@ -20,11 +20,25 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5OW-VF-Csg">
+                                <rect key="frame" x="139" y="269" width="42" height="30"/>
+                                <state key="normal" title="Notify"/>
+                                <connections>
+                                    <action selector="notify:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ThO-ta-2lk"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5OW-VF-Csg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WAG-Hq-G4n"/>
+                            <constraint firstItem="5OW-VF-Csg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uXu-1c-xiW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="33.75" y="34.859154929577464"/>
         </scene>
     </scenes>
 </document>
