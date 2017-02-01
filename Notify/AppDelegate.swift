@@ -20,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UNUserNotificationCenter.current().delegate = self
         
+        //Function call
+        configureUserNotification()
+        
         return true
     }
 
@@ -44,6 +47,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    //Configuration
+    private func configureUserNotification() {
+        
+        //Actions
+        let favAction = UNNotificationAction(identifier: "fistBump", title: "👊🏾 Fist Bump", options: [])
+        let dismissAction = UNNotificationAction(identifier: "dismiss", title: "Dismiss", options: [])
+        
+        let category = UNNotificationCategory(identifier: "myNotificationCategory", actions: [favAction, dismissAction], intentIdentifiers: [], options: [])
+        UNUserNotificationCenter.current().setNotificationCategories([category])
+    }
 
 
 }
@@ -54,6 +68,12 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         
         //Type of presentation for the notification
         completionHandler(.alert)
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        print("Response received for \(response.actionIdentifier)")
+        completionHandler()
     }
 }
 
