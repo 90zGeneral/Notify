@@ -54,8 +54,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Actions
         let favAction = UNNotificationAction(identifier: "fistBump", title: "👊🏾 Fist Bump", options: [])
         let dismissAction = UNNotificationAction(identifier: "dismiss", title: "Dismiss", options: [])
+        let lameAction = UNNotificationAction(identifier: "lame", title: "Lame", options: [])
         
-        let category = UNNotificationCategory(identifier: "myNotificationCategory", actions: [favAction, dismissAction], intentIdentifiers: [], options: [])
+        let category = UNNotificationCategory(identifier: "myNotificationCategory", actions: [favAction, dismissAction, lameAction], intentIdentifiers: [], options: [])
         UNUserNotificationCenter.current().setNotificationCategories([category])
     }
 

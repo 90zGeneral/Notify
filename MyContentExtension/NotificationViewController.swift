@@ -44,6 +44,9 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
             
         }else if response.actionIdentifier == "dismiss" {
             completion(.dismissAndForwardAction)
+            
+        }else if response.actionIdentifier == "lame" {
+            completion(.doNotDismiss)
         }
     }
 
