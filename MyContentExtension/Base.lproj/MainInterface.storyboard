@@ -29,7 +29,17 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👊🏾" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="169-6B-teI">
-                                <rect key="frame" x="212" y="200.5" width="108" height="119.5"/>
+                                <rect key="frame" x="212" y="200" width="108" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👊🏾" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeB-fe-0Q9">
+                                <rect key="frame" x="8" y="200" width="108" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="119.5" id="aju-wv-XIz"/>
+                                    <constraint firstAttribute="width" constant="108" id="iNx-bX-DTW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -42,7 +52,9 @@
                             <constraint firstItem="rd8-en-191" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="8" id="Cpf-63-22x"/>
                             <constraint firstAttribute="trailing" secondItem="rd8-en-191" secondAttribute="trailing" constant="8" id="F3e-kq-uyN"/>
                             <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="rd8-en-191" secondAttribute="bottom" constant="8" id="I7u-8q-64c"/>
+                            <constraint firstItem="xeB-fe-0Q9" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="8" id="jAK-hA-E1x"/>
                             <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="169-6B-teI" secondAttribute="bottom" id="jI4-V4-qCI"/>
+                            <constraint firstAttribute="bottom" secondItem="xeB-fe-0Q9" secondAttribute="bottom" id="rax-RO-XgE"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
